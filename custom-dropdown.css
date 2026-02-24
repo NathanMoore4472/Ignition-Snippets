@@ -1,0 +1,45 @@
+.psc-VertivDropdown {
+    border: 1px solid var(--neutral-20);
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.psc-VertivDropdownOption {
+	padding: 10px !important;
+}
+
+.psc-VertivDropdownOption:last-child, .psc-VertivDropdownOption:first-child{
+	margin: 0 !important;
+}
+
+.psc-VertivDropdown div:focus {
+	outline: unset;
+}
+
+.psc-VertivDropdown .iaDropdownCommon_expandIcon {
+	color: var(--ClientColorPrimary);
+	margin-right: 10px;
+}
+
+.psc-VertivDropdown.ia_dropdown--active, .psc-VertivDropdown.ia_dropdown--focused{
+	border: 2px solid var(--ClientColorPrimary);
+	border-radius: 4px;
+	outline: unset;
+}
+
+.psc-VertivDropdown.ia_dropdown:focus{
+	outline: unset;
+}
+
+.iaDropdownCommon_options:has(.psc-VertivDropdownOption) {
+	background: var(--input);
+    --callToAction--hover: var(--ClientColorPrimary);
+    --callToAction--activeAlt: color-mix(in srgb, var(--ClientColorPrimary) 30%, transparent);
+    font-family: monospace;
+}
+
+.ia_componentModal:has(.psc-VertivDropdownOption){
+	border: 0px solid var(--tableBorderColor);
+	border-radius: 4px;
+}
+
